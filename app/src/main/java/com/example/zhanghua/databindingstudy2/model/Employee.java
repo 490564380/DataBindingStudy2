@@ -24,10 +24,10 @@ public class Employee extends BaseObservable {
         isFired.set(false);
     }
 
-    public Employee(String lastName, String firstName, ObservableBoolean isFired) {
+    public Employee(String lastName, String firstName, boolean isFired) {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.isFired = isFired;
+        this.isFired.set(isFired);
     }
 
     @Bindable

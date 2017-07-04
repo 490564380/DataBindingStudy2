@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.zhanghua.databindingstudy2.databinding.ActivityMainBinding;
+import com.example.zhanghua.databindingstudy2.demos.listDemo.MyListActivity;
 import com.example.zhanghua.databindingstudy2.demos.simpleDemo.SimpleActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, SimpleActivity.class));
         }
 
+        public void showListDemo(View view) {
+            startActivity(new Intent(MainActivity.this, MyListActivity.class));
+        }
 
     }
 }
