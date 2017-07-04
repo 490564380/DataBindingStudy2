@@ -22,9 +22,6 @@ public class Employee extends BaseObservable {
         this.lastName = lastName;
         this.firstName = firstName;
         isFired.set(false);
-        user.put("boss","ZhangHua");
-        user.put("employee","ZhangHuakai");
-        user.put("assistance","ZhangBozhi");
     }
 
     public Employee(String lastName, String firstName, ObservableBoolean isFired) {

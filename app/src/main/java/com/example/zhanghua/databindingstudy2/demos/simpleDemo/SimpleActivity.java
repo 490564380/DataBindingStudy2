@@ -1,4 +1,4 @@
-package com.example.zhanghua.databindingstudy2.demos;
+package com.example.zhanghua.databindingstudy2.demos.simpleDemo;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -18,6 +18,10 @@ public class SimpleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        employee.user.put("boss","ZhangHua");
+        employee.user.put("employee","ZhangHuakai");
+        employee.user.put("assistance","ZhangBozhi");
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_simple);
         binding.setEmployee(employee);
         binding.setPresenter(new Presenter());

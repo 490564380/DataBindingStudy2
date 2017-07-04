@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.zhanghua.databindingstudy2.databinding.ActivityMainBinding;
-import com.example.zhanghua.databindingstudy2.demos.SimpleActivity;
+import com.example.zhanghua.databindingstudy2.demos.simpleDemo.SimpleActivity;
 
 public class MainActivity extends AppCompatActivity {
 

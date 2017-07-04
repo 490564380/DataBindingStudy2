@@ -12,7 +12,7 @@
 
         <variable
             name="presenter"
-            type="com.example.zhanghua.databindingstudy2.demos.SimpleActivity.Presenter" />
+            type="com.example.zhanghua.databindingstudy2.demos.simpleDemo.SimpleActivity.Presenter" />
 
     </data>
 
