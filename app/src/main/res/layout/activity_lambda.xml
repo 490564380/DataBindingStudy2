@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.example.zhanghua.databindingstudy2.demos.lambdademo.LambdaActivity.LambdaActivityPressenter" />
+
+        <variable
+            name="employee"
+            type="com.example.zhanghua.databindingstudy2.model.Employee" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> presenter.onEmployeeClick(employee)}"
+            android:text="@string/demo_lambda_test_onclick" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onLongClick="@{(v) -> presenter.onEmployeeLongClick(employee, context)}"
+            android:text="@string/demo_lambda_test_longclick" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/demo_lambda_test_focus_change"
+            android:onFocusChange="@{(v, fcs) -> presenter.onFocusChange(employee,fcs)}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</layout>
