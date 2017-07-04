@@ -57,7 +57,6 @@ public class Employee extends BaseObservable {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
-        notifyPropertyChanged(BR.avatar);
     }
 
     public void setIsFired(boolean fired) {

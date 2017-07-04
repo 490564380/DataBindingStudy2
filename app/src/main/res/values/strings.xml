@@ -8,4 +8,10 @@
     <string name="demo_list_add_item">Add item</string>
     <string name="demo_list_remove_item">Remove item</string>
 
+
+    <string name="demo_two_way">Two Way</string>
+    <string name="welcome">Hello %s</string>
+
+    <string name="demo_expression">Expression</string>
+
 </resources>
