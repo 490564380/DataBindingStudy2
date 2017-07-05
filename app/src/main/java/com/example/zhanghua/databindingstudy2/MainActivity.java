@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.zhanghua.databindingstudy2.databinding.ActivityMainBinding;
+import com.example.zhanghua.databindingstudy2.demos.animation.AnimationActivity;
 import com.example.zhanghua.databindingstudy2.demos.expression.ExpressionActivity;
 import com.example.zhanghua.databindingstudy2.demos.lambdademo.LambdaActivity;
 import com.example.zhanghua.databindingstudy2.demos.listDemo.MyListActivity;
@@ -44,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
         public void showLambdaDemo(View view) {
             startActivity(new Intent(MainActivity.this, LambdaActivity.class));
+        }
+
+        public void showAnimationDemo(View view) {
+            startActivity(new Intent(MainActivity.this, AnimationActivity.class));
         }
     }
 }

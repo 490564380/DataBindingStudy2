@@ -19,4 +19,9 @@
     <string name="demo_lambda_test_longclick">Test onLongClick</string>
     <string name="demo_lambda_test_focus_change">Test onLongClick</string>
     <string name="demo_lambda_test_onclick">Test onClick</string>
+
+    <string name="demo_animation">Animation</string>
+    <string name="demo_show_imageview">Show Image</string>
+
+
 </resources>

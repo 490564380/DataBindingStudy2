@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenter"
+            type="com.example.zhanghua.databindingstudy2.demos.animation.AnimationActivity.AnimationPresenter" />
+
+        <variable
+            name="showImage"
+            type="Boolean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/default_avatar"
+            android:visibility="@{showImage?View.VISIBLE:View.GONE}" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onCheckedChanged="@{presenter.onCheckedChanged}"
+            android:text="@string/demo_show_imageview" />
+
+    </LinearLayout>
+
+</layout>

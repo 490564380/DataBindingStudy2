@@ -22,7 +22,8 @@
         <activity android:name=".demos.listDemo.MyListActivity" />
         <activity android:name=".demos.twowaydemo.TwoWayActivity" />
         <activity android:name=".demos.expression.ExpressionActivity" />
-        <activity android:name=".demos.lambdademo.LambdaActivity"></activity>
+        <activity android:name=".demos.lambdademo.LambdaActivity" />
+        <activity android:name=".demos.animation.AnimationActivity"></activity>
     </application>
 
 </manifest>
