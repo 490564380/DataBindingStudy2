@@ -23,5 +23,6 @@
     <string name="demo_animation">Animation</string>
     <string name="demo_show_imageview">Show Image</string>
 
+    <string name="demo_change_component">Change Component</string>
 
 </resources>

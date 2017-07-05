@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="textColorDay">#123456</color>
+    <color name="textColorNight">#654321</color>
 </resources>

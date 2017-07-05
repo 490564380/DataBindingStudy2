@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.example.zhanghua.databindingstudy2.databinding.ActivityMainBinding;
 import com.example.zhanghua.databindingstudy2.demos.animation.AnimationActivity;
+import com.example.zhanghua.databindingstudy2.demos.component.productcomponent.ProductionComponent;
+import com.example.zhanghua.databindingstudy2.demos.component.testcomponent.TestComponent;
 import com.example.zhanghua.databindingstudy2.demos.expression.ExpressionActivity;
 import com.example.zhanghua.databindingstudy2.demos.lambdademo.LambdaActivity;
 import com.example.zhanghua.databindingstudy2.demos.listDemo.MyListActivity;
@@ -49,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
 
         public void showAnimationDemo(View view) {
             startActivity(new Intent(MainActivity.this, AnimationActivity.class));
+        }
+
+        public void changeComponent(View view) {
+            if (DemoApplication.isTest) {
+                DataBindingUtil.setDefaultComponent(new ProductionComponent());
+            } else {
+                DataBindingUtil.setDefaultComponent(new TestComponent());
+            }
+            DemoApplication.isTest = !DemoApplication.isTest;
+            recreate();
         }
     }
 }
